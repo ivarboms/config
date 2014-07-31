@@ -1,0 +1,1 @@
+This folder is used as vim's dir and backupdir. This file ensures that it's included in the git repository, which is useful since vim will silenty fail if this folder doesn't exist.

@@ -1,4 +1,14 @@
-set guifont=Consolas:h10
+if has("win32")
+	set guifont=Consolas:h10
+	set backupdir=$VIM\vimfiles\backup
+	set dir=$VIM\vimfiles\backup
+else
+	if has("unix")
+		set guifont="DejaVu Sans Mono"
+		set backupdir=~/.vim/backup
+		set dir=~/.vim/backup
+	endif
+endif
 
 set relativenumber
 
@@ -7,9 +17,6 @@ set columns=150
 
 " Command line history
 set history=500
-
-set backupdir=C:\vimbackups
-set dir=C:\vimbackups
 
 " Tabs with width 2
 set tabstop=2
