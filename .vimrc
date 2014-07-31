@@ -59,8 +59,9 @@ set encoding=utf-8
 		
 			
 " Show indent guides for tabs. Note: Space at end is important.
+set list
 set lcs=tab:→\ 
-set lcs=tab:▸\ 
+"set lcs=tab:▸\ 
 
 colorscheme darkspectrum
 "colorscheme solarized
