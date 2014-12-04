@@ -11,6 +11,8 @@ else
 endif
 
 set relativenumber
+" Also shows relative line numbers in help files.
+autocmd FileType help set relativenumber
 
 set lines=45
 set columns=150
