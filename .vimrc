@@ -37,6 +37,12 @@ set linebreak
 " Copy indentation from current line when making a new line.
 set autoindent
 
+" Overwrite existing file instead of making a new file + renaming.
+" This avoids annoying issue when saving a file that is selected in explorer
+" where the selection is lost (since a new file is created without this option
+" set to no).
+set backupcopy=no
+
 " Automatically reload vimrc when saving it.
 autocmd! BufWritePost _vimrc source $MYVIMRC
 
