@@ -137,6 +137,9 @@ source $VIMRUNTIME/mswin.vim
 "behave mswin
 ":set selectmode=
 
+"z-almost-bottom and z-almost-top
+nmap zab 7jzb7k
+nmap zat 7kzt7j
 
 " Use tabs like in other editors, 1 buffer per tab.
 :tab sball
