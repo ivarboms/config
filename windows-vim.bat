@@ -3,6 +3,8 @@ echo Vim setup start.
 echo Symlink vimrc.
 if exist "C:\Program Files (x86)\Vim\_vimrc" del "C:\Program Files (x86)\Vim\_vimrc"
 mklink /H "C:\Program Files (x86)\Vim\_vimrc" .vimrc
+if exist "%UserProfile%\.vimrc" del "%UserProfile%\.vimrc"
+mklink /H "%UserProfile%\.vimrc" .vimrc
 
 rem Vim likes to default to English, regardless of settings in vimrc.
 rem Deleting the 'lang' folder seems to force it to English.
