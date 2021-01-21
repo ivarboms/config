@@ -10,6 +10,7 @@ else
 	endif
 endif
 
+set number
 set relativenumber
 " Also shows relative line numbers in help files.
 autocmd FileType help set relativenumber
